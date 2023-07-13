@@ -51,6 +51,7 @@ public class Company {
 
         Employee[] newEmployees = new Employee[employees.length + 1];
 
+       
         // Copy existing employees to the new array
         System.arraycopy(employees, 0, newEmployees, 0, employees.length);
 
@@ -64,6 +65,7 @@ public class Company {
         }
 		return false;
     }
+    
     public boolean removeEmployeesIf(Predicate<Employee> predicate) {
         boolean removed = false;
         for (int i = 0; i < employees.length; i++) {
@@ -80,6 +82,7 @@ public class Company {
         return removed;
     }
 
+    //By what?
     public Employee getEmployee(int id) {
         for (Employee employee : employees) {
             if (employee.getId() == id) {
